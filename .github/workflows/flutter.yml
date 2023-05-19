@@ -38,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: sail.${{ github.sha }}.android
-        path: build/app/outputs/flutter-apk/app-release.apk
+        path: /home/mmdf/actions-runner-sail/build/app/outputs/flutter-apk/app-release.apk
 
   build_ios:
     needs: check_commit_msg
@@ -59,4 +59,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: sail.${{ github.sha }}.ios
-        path: build/ios/iphoneos/Runner.app
+        path: /home/mmdf/actions-runner-sail/build/ios/iphoneos/Runner.app
